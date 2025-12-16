@@ -22,23 +22,22 @@ const EventsForm = () => {
   const [error, setError] = useState('');
   
   useEffect(() => {
-    if (isEdit) {
-      loadEvent();
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [id]);
-  
-  const loadEvent = async () => {
-    try {
-      const data = await eventsService.getById(id);
-      if (data) {
-        setFormData(data);
+    const loadEvent = async () => {
+      if (!isEdit) return;
+      
+      try {
+        const data = await eventsService.getById(id);
+        if (data) {
+          setFormData(data);
+        }
+      } catch (error) {
+        console.error('Error loading event:', error);
+        setError('Nie można załadować wydarzenia');
       }
-    } catch (error) {
-      console.error('Error loading event:', error);
-      setError('Nie można załadować wydarzenia');
-    }
-  };
+    };
+    
+    loadEvent();
+  }, [id, isEdit]);
   
   const handleChange = (e) => {
     const { name, value } = e.target;

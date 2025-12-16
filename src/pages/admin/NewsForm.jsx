@@ -20,29 +20,28 @@ const NewsForm = () => {
   const [error, setError] = useState('');
   
   useEffect(() => {
-    if (isEdit) {
-      loadNews();
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [id]);
-  
-  const loadNews = async () => {
-    try {
-      const data = await newsService.getById(id);
-      if (data) {
-        setFormData({
-          title: data.title,
-          excerpt: data.excerpt,
-          content: data.content,
-          category: data.category,
-          image: data.image || ''
-        });
+    const loadNews = async () => {
+      if (!isEdit) return;
+      
+      try {
+        const data = await newsService.getById(id);
+        if (data) {
+          setFormData({
+            title: data.title,
+            excerpt: data.excerpt,
+            content: data.content,
+            category: data.category,
+            image: data.image || ''
+          });
+        }
+      } catch (error) {
+        console.error('Error loading news:', error);
+        setError('Nie można załadować aktualności');
       }
-    } catch (error) {
-      console.error('Error loading news:', error);
-      setError('Nie można załadować aktualności');
-    }
-  };
+    };
+    
+    loadNews();
+  }, [id, isEdit]);
   
   const handleChange = (e) => {
     const { name, value } = e.target;

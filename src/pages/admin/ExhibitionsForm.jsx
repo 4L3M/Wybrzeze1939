@@ -22,31 +22,30 @@ const ExhibitionsForm = () => {
   const [error, setError] = useState('');
   
   useEffect(() => {
-    if (isEdit) {
-      loadExhibition();
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [id]);
-  
-  const loadExhibition = async () => {
-    try {
-      const data = await exhibitionsService.getById(id);
-      if (data) {
-        setFormData({
-          title: data.title,
-          description: data.description,
-          longDescription: data.longDescription,
-          status: data.status,
-          startDate: data.startDate,
-          endDate: data.endDate || '',
-          image: data.image || ''
-        });
+    const loadExhibition = async () => {
+      if (!isEdit) return;
+      
+      try {
+        const data = await exhibitionsService.getById(id);
+        if (data) {
+          setFormData({
+            title: data.title,
+            description: data.description,
+            longDescription: data.longDescription,
+            status: data.status,
+            startDate: data.startDate,
+            endDate: data.endDate || '',
+            image: data.image || ''
+          });
+        }
+      } catch (error) {
+        console.error('Error loading exhibition:', error);
+        setError('Nie można załadować wystawy');
       }
-    } catch (error) {
-      console.error('Error loading exhibition:', error);
-      setError('Nie można załadować wystawy');
-    }
-  };
+    };
+    
+    loadExhibition();
+  }, [id, isEdit]);
   
   const handleChange = (e) => {
     const { name, value } = e.target;
