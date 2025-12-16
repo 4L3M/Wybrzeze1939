@@ -13,7 +13,11 @@ const Navigation = () => {
       <div className="container">
         <div className="nav-content">
           <Link to="/" className="nav-logo">
-            <h1 className="logo-text">Muzeum Wybrzeże 1939</h1>
+            <h1 className="logo-text">
+              <span className="logo-line">Muzeum</span>
+              <span className="logo-line">Wybrzeże</span>
+              <span className="logo-line">1939</span>
+            </h1>
           </Link>
           
           <ul className="nav-menu">
