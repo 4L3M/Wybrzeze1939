@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Nowa wystawa 'Oblężenie Helu' już otwarta",
+    "excerpt": "Zapraszamy do obejrzenia nowej wystawy tematycznej poświęconej heroicznej obronie Helu we wrześniu 1939 roku.",
+    "content": "Od 1 grudnia możecie Państwo oglądać naszą najnowszą wystawę czasową poświęconą obronie Helu. Prezentujemy unikalne eksponaty, zdjęcia i dokumenty z tego okresu.",
+    "date": "2024-12-01",
+    "image": "/images/news/hel-exhibition.jpg",
+    "category": "Wystawy"
+  },
+  {
+    "id": 2,
+    "title": "Warsztaty dla dzieci - Lekcja historii",
+    "excerpt": "W najbliższą sobotę odbędą się bezpłatne warsztaty edukacyjne dla dzieci w wieku 8-12 lat.",
+    "content": "Zapraszamy dzieci na interaktywne warsztaty historyczne, podczas których poznają historię obrony polskiego wybrzeża w 1939 roku.",
+    "date": "2024-11-28",
+    "image": "/images/news/workshops.jpg",
+    "category": "Edukacja"
+  },
+  {
+    "id": 3,
+    "title": "Muzeum nagrodzono za działalność edukacyjną",
+    "excerpt": "Nasze muzeum otrzymało prestiżową nagrodę za wybitne osiągnięcia w edukacji historycznej.",
+    "content": "Z dumą informujemy, że Muzeum Wybrzeże 1939 zostało uhonorowane nagrodą Ministra Kultury i Dziedzictwa Narodowego za działalność edukacyjną w 2024 roku.",
+    "date": "2024-11-20",
+    "image": "/images/news/award.jpg",
+    "category": "Aktualności"
+  }
+]
