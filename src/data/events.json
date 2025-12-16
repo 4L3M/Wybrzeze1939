@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Rocznica obrony Wybrzeża",
+    "description": "Uroczyste obchody 85. rocznicy bohaterskiej obrony polskiego wybrzeża.",
+    "date": "2025-09-01",
+    "time": "10:00",
+    "location": "Muzeum Wybrzeże 1939",
+    "image": "/images/events/anniversary.jpg",
+    "type": "Uroczystość"
+  },
+  {
+    "id": 2,
+    "title": "Wykład: Marynarka Wojenna w 1939 roku",
+    "description": "Dr hab. Jan Kowalski opowie o roli polskiej Marynarki Wojennej w kampanii wrześniowej.",
+    "date": "2025-01-15",
+    "time": "18:00",
+    "location": "Sala konferencyjna",
+    "image": "/images/events/lecture.jpg",
+    "type": "Wykład"
+  },
+  {
+    "id": 3,
+    "title": "Nocne zwiedzanie muzeum",
+    "description": "Specjalna okazja do zwiedzenia muzeum po godzinach z przewodnikiem.",
+    "date": "2025-02-14",
+    "time": "20:00",
+    "location": "Muzeum Wybrzeże 1939",
+    "image": "/images/events/night-tour.jpg",
+    "type": "Wydarzenie specjalne"
+  }
+]

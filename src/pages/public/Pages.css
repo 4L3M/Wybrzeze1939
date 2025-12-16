@@ -1,0 +1,137 @@
+/* Common Page Styles */
+.section {
+  padding: var(--spacing-xl) 0;
+}
+
+.section.bg-alt {
+  background-color: var(--color-background-alt);
+}
+
+.section-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto var(--spacing-xl);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-lg);
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.lead {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: var(--color-text-light);
+}
+
+/* Page Content */
+.page-content {
+  padding: var(--spacing-xl) 0;
+}
+
+.content-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.content-section h2 {
+  margin-bottom: var(--spacing-md);
+}
+
+.content-section h3 {
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+}
+
+.content-section p {
+  line-height: 1.8;
+  margin-bottom: var(--spacing-md);
+}
+
+/* Info Boxes */
+.info-box {
+  background-color: var(--color-background-alt);
+  border-left: 4px solid var(--color-accent);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  border-radius: var(--radius-sm);
+}
+
+.info-box h3 {
+  margin-top: 0;
+  color: var(--color-accent);
+}
+
+/* Grid Layouts */
+.two-column {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.three-column {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Tables */
+.table-container {
+  overflow-x: auto;
+  margin-bottom: var(--spacing-lg);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th, td {
+  padding: var(--spacing-sm);
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+th {
+  background-color: var(--color-background-alt);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+tr:hover {
+  background-color: var(--color-background-alt);
+}
+
+/* Loading State */
+.loading {
+  text-align: center;
+  padding: var(--spacing-xl);
+  color: var(--color-text-light);
+}
+
+/* Error State */
+.error {
+  background-color: #fee;
+  border: 1px solid var(--color-danger);
+  color: var(--color-danger);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .lead {
+    font-size: 1.1rem;
+  }
+}

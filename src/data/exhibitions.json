@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Wystawa stała: Obrona Wybrzeża 1939",
+    "description": "Główna wystawa muzeum prezentująca kompleksową historię walk o polskie wybrzeże we wrześniu 1939 roku.",
+    "longDescription": "Nasza wystawa stała to multimedialna podróż przez wydarzenia września 1939 roku. Prezentujemy unikalne eksponaty, w tym broń, mundury, dokumenty i przedmioty osobiste żołnierzy. Interaktywne mapy i prezentacje multimedialne pozwalają zrozumieć przebieg działań wojennych.",
+    "status": "current",
+    "startDate": "2020-09-01",
+    "endDate": null,
+    "image": "/images/exhibitions/main-exhibition.jpg",
+    "gallery": [
+      "/images/exhibitions/main-1.jpg",
+      "/images/exhibitions/main-2.jpg",
+      "/images/exhibitions/main-3.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Oblężenie Helu",
+    "description": "Wystawa czasowa poświęcona ostatniemu bastionowi polskiego oporu na wybrzeżu.",
+    "longDescription": "Półwysep Helski bronił się do 2 października 1939 roku, jako jedna z ostatnich jednostek wojskowych w kampanii wrześniowej. Wystawa przedstawia heroizm obrońców Helu.",
+    "status": "current",
+    "startDate": "2024-12-01",
+    "endDate": "2025-03-31",
+    "image": "/images/exhibitions/hel-siege.jpg",
+    "gallery": [
+      "/images/exhibitions/hel-1.jpg",
+      "/images/exhibitions/hel-2.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Westerplatte - pierwsza bitwa",
+    "description": "Archiwalna wystawa o heroicznej obronie Wojskowej Składnicy Tranzytowej na Westerplatte.",
+    "longDescription": "Wystawa archiwalna prezentująca historię 7-dniowej obrony Westerplatte, symbolu polskiego oporu we wrześniu 1939 roku.",
+    "status": "archive",
+    "startDate": "2023-09-01",
+    "endDate": "2023-12-31",
+    "image": "/images/exhibitions/westerplatte.jpg",
+    "gallery": []
+  }
+]
