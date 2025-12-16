@@ -39,6 +39,7 @@ const Home = () => {
       <Hero 
         title="Muzeum Wybrzeże 1939"
         subtitle="Pamięć o bohaterskiej obronie polskiego wybrzeża we wrześniu 1939 roku"
+        backgroundImage="hero-background"
       />
       
       <section className="section">

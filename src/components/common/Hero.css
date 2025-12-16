@@ -9,6 +9,13 @@
   justify-content: center;
 }
 
+.hero.hero-with-image {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #2c3e50 100%);
+  background-image: 
+    linear-gradient(135deg, rgba(44, 62, 80, 0.95) 0%, rgba(52, 73, 94, 0.9) 50%, rgba(44, 62, 80, 0.95) 100%),
+    repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.03) 35px, rgba(255,255,255,.03) 70px);
+}
+
 .hero-overlay {
   position: absolute;
   top: 0;

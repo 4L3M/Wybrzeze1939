@@ -1,9 +1,11 @@
 import './Hero.css';
 
 const Hero = ({ title, subtitle, backgroundImage }) => {
+  const heroClass = backgroundImage ? 'hero hero-with-image' : 'hero';
+  
   return (
     <div 
-      className="hero" 
+      className={heroClass}
       style={backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : {}}
     >
       <div className="hero-overlay">
